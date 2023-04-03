@@ -1,0 +1,185 @@
+feature {
+  name: "Building_Fenced"
+  type: BYTES
+  domain: "Building_Fenced"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "Building_Painted"
+  type: BYTES
+  domain: "Building_Painted"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "Customer Id"
+  type: BYTES
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "Garden"
+  type: BYTES
+  domain: "Garden"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "Geo_Code"
+  type: BYTES
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "NumberOfWindows"
+  type: BYTES
+  domain: "NumberOfWindows"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "Settlement"
+  type: BYTES
+  domain: "Settlement"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "Building Dimension"
+  type: FLOAT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "Building_Type"
+  type: INT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "Claim"
+  type: INT
+  bool_domain {
+  }
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "Insured_Period"
+  type: FLOAT
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+string_domain {
+  name: "Building_Fenced"
+  value: "N"
+  value: "V"
+}
+string_domain {
+  name: "Building_Painted"
+  value: "N"
+  value: "V"
+}
+string_domain {
+  name: "Garden"
+  value: "0"
+  value: "O"
+  value: "V"
+}
+string_domain {
+  name: "NumberOfWindows"
+  value: "   ."
+  value: "1"
+  value: "2"
+  value: "3"
+  value: "4"
+  value: "5"
+  value: "6"
+  value: "7"
+  value: "8"
+  value: "9"
+  value: ">=10"
+}
+string_domain {
+  name: "Settlement"
+  value: "R"
+  value: "U"
+}

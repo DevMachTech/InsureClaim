@@ -1,0 +1,79 @@
+{
+  "evalConfig": {
+    "modelSpecs": [
+      {
+        "signatureName": "serving_default",
+        "labelKey": "Claim"
+      }
+    ],
+    "slicingSpecs": [
+      {},
+      {
+        "featureKeys": [
+          "Building_Type"
+        ]
+      },
+      {
+        "featureKeys": [
+          "Claim"
+        ]
+      }
+    ],
+    "metricsSpecs": [
+      {
+        "metrics": [
+          {
+            "className": "ExampleCount"
+          },
+          {
+            "className": "BinaryAccuracy",
+            "threshold": {
+              "valueThreshold": {
+                "lowerBound": 0.5
+              }
+            }
+          },
+          {
+            "className": "BinaryCrossentropy"
+          },
+          {
+            "className": "AUC"
+          },
+          {
+            "className": "AUCPrecisionRecall"
+          },
+          {
+            "className": "Precision"
+          },
+          {
+            "className": "Recall"
+          },
+          {
+            "className": "MeanLabel"
+          },
+          {
+            "className": "MeanPrediction"
+          },
+          {
+            "className": "Calibration"
+          },
+          {
+            "className": "CalibrationPlot"
+          },
+          {
+            "className": "ConfusionMatrixPlot"
+          }
+        ],
+        "modelNames": [
+          ""
+        ]
+      }
+    ]
+  },
+  "version": "0.43.0",
+  "dataLocation": "<user provided PCollection>",
+  "fileFormat": "<unknown>",
+  "modelLocations": {
+    "": "./pipeline/Trainer/model/52/Format-Serving"
+  }
+}

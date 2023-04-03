@@ -1,0 +1,14 @@
+
+SCALE_Z_FEATURE_KEYS = [
+        "Building Dimension"
+    ]
+
+VOCAB_FEATURE_KEYS = ["Building_Fenced","Building_Painted"]
+
+HASH_STRING_FEATURE_KEYS = ["Customer Id"]
+
+LABEL_KEY = "Claim"
+
+# Utility function for renaming the feature
+def transformed_name(key):
+    return key + '_xf'
